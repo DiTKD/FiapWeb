@@ -1,0 +1,26 @@
+﻿
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Index</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.9/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+
+
+    <img src="~/images.png" asp-append-version="true"/>
+    
+    <partial name="_menu" />
+
+    @RenderBody()
+
+    <footer>
+        FiapWeb - @DateTime.Now
+    </footer>
+
+</body>
+</html>
+

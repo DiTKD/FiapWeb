@@ -1,0 +1,21 @@
+﻿@model Pergunta
+<form action="/home/create" method="post">
+    @*<input type="text" name="Descricao" value="" />
+        <br />
+        <input type="text" name="Aluno" value="" />
+        <br />*@
+
+    @Html.EditorFor(a => a.Descricao)
+    @Html.ValidationMessageFor(a => a.Descricao)
+    <br>
+    @Html.EditorFor(a => a.Aluno)
+    @Html.ValidationMessageFor(a => a.Aluno)
+    <br>
+    <input type="submit" value="Salvar" />
+    <br>
+    <br>
+    <br>
+    <br>
+    @Html.ValidationSummary()
+
+</form>
